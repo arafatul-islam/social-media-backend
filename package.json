@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
@@ -9,5 +9,13 @@
     "helmet": "^6.0.0",
     "mongoose": "^6.7.1",
     "morgan": "^1.10.0"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "start-dev": "nodemon app.js"
+  },
+  "type": "module"
 }
