@@ -7,6 +7,7 @@ const morgan = require("morgan");
 // modules
 const userRouter = require("./routes/userRoute.js");
 const authRouter = require("./routes/authRoute.js");
+const postsRouter = require("./routes/postsRoute.js");
 
 const app = express();
 dotenv.config();
@@ -21,6 +22,7 @@ app.use(morgan());
 
 app.use("/api/users", userRouter);
 app.use("/api/auth", authRouter);
+app.use("/api/posts", postsRouter);
 
 // backend conncection checking
 const port = process.env.PORT || 8000;
